@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.25rem;
+  max-width: 1440px;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .logo {
+  margin: 50px 0px;
+}
+
+section h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #969696;
+}
+
+section span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #151f29;
+}
+
+section .subscribe {
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #151f29;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+section .red {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  outline: none;
+  border-radius: 50px;
+  border: 1px solid #c2d3ff;
+  font-size: 0.9rem;
+}
+
+section input::-webkit-input-placeholder {
+  color: #c2d3ff;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+section input:-ms-input-placeholder {
+  color: #c2d3ff;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+section input::-ms-input-placeholder {
+  color: #c2d3ff;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+section input::placeholder {
+  color: #c2d3ff;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+section button {
+  padding: 15px 40px;
+  color: white;
+  background-color: #4f7df3;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+}
+
+section button:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(115%);
+          filter: brightness(115%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section .email {
+  position: absolute;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  color: #ff5263;
+  left: 60px;
+  margin-top: 100px;
+  display: none;
+}
+
+section .ilustracija {
+  max-width: 650px;
+  max-height: 400px;
+  margin-top: 70px;
+}
+
+section .socials {
+  margin-top: 80px;
+}
+
+section .socials i.fab {
+  margin: 0px 8px;
+  font-size: 1rem;
+  display: inline-block;
+  border-radius: 50%;
+  border: solid 1px #c2d3ff;
+  color: #4f7df3;
+  padding: 0.5em 0.6em;
+}
+
+section .socials .fab:hover {
+  background-color: #4f7df3;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+section .bottomdiv {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  font-weight: 300px;
+  color: #969696;
+}
+
+@media screen and (min-width: 700px) {
+  input {
+    width: 70%;
+    margin-right: 20px;
+  }
+  .red {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .red {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  input {
+    width: 70%;
+  }
+  button {
+    width: 70%;
+    margin-top: 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  span {
+    font-size: 1.6rem;
+  }
+  .ilustracija {
+    width: 300px;
+    height: 214px;
+  }
+  input {
+    padding: 0;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

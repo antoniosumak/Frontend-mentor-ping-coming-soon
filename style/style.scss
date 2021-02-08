@@ -1,0 +1,151 @@
+@import "./varijable";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.25rem;
+  max-width: 1440px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .logo {
+    margin: 50px 0px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: $siva;
+  }
+  span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $span;
+  }
+  .subscribe {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: $span;
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+  .red {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    outline: none;
+    border-radius: 50px;
+    border: 1px solid $svjetloplava;
+    font-size: 0.9rem;
+  }
+  input::placeholder {
+    color: $svjetloplava;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  button {
+    padding: 15px 40px;
+    color: white;
+    background-color: $plava;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+  }
+  button:hover {
+    cursor: pointer;
+    filter: brightness(115%);
+    transition: all 0.3s;
+  }
+  .email {
+    position: absolute;
+    font-size: 0.8rem;
+    margin-top: 15px;
+    color: $crvena;
+    left: 60px;
+    margin-top: 100px;
+    display: none;
+  }
+  .ilustracija {
+    max-width: 650px;
+    max-height: 400px;
+    margin-top: 70px;
+  }
+  .socials {
+    margin-top: 80px;
+    i.fab {
+      margin: 0px 8px;
+      font-size: 1rem;
+      display: inline-block;
+      border-radius: 50%;
+      border: solid 1px $svjetloplava;
+      color: $plava;
+      padding: 0.5em 0.6em;
+    }
+    .fab:hover {
+      background-color: $plava;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+  }
+  .bottomdiv {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    font-weight: 300px;
+    color: $siva;
+  }
+}
+@media screen and (min-width: 700px) {
+  input {
+    width: 70%;
+    margin-right: 20px;
+  }
+  .red {
+    flex-direction: row;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .red {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  }
+  input {
+    width: 70%;
+  }
+  button {
+    width: 70%;
+    margin-top: 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  span {
+    font-size: 1.6rem;
+  }
+  .ilustracija {
+    width: 300px;
+    height: 214px;
+  }
+  input {
+    padding: 0;
+    margin: 0;
+  }
+}
